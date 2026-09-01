@@ -46,9 +46,9 @@ GhanaCalendar provides evidence-backed Ghana holiday occurrences and determinist
 | CAL-1.2 | Working-day engine | Done | Codex | CAL-1.1 | `go test ./...`, `go vet ./...` |
 | CAL-2.1 | REST/GraphQL/export interfaces | Done | Codex | CAL-1.2 | Contracts and API handlers |
 | CAL-2.2 | TypeScript SDK | Done locally | Codex | CAL-2.1 | `sdk/typescript/index.ts`; registry publication pending |
-| CAL-3.1 | Public website and sandbox | Done locally | Codex | CAL-1.2 | typecheck, dataset tests, production build pass |
+| CAL-3.1 | Public website and sandbox | Done | Codex | CAL-1.2 | Production UI uses custom bounded date stepper, portfolio fonts, favicon and full canonical/social metadata; browser evidence recorded |
 | CAL-3.2 | Admin review/publish workflow | Pending | Unassigned | CAL-0.1 | Required before stable; beta remains source-file reviewed |
-| CAL-4.1 | Web production release | Done | Codex | CAL-3.1 | Vercel `dpl_Ca1QeBj5KXhJBiqbchTKfx1L6hjB`; canonical host HTTP 200 and TLS verified |
+| CAL-4.1 | Web production release | Done | Codex | CAL-3.1 | Current Vercel `dpl_8Tn4JRk1FQtKBcfQhm5PHtzN5V83`; canonical host UI/SEO/TLS verified |
 | CAL-4.2 | API production release | Done | Codex | CAL-2.1 | Render `srv-dabdeaf40ujc73aji6n0`, deploy `dep-dabdeb740ujc73aji93g`; custom domain verified |
 | CAL-4.3 | Production smoke and rollback | Done | Codex | CAL-4.1, CAL-4.2 | Health, REST, GraphQL, CSV, ICS, web, sitemap and robots passed; provider URLs retained for rollback |
 

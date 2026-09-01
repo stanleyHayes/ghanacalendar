@@ -41,3 +41,7 @@ Both canonical hosts terminate valid HTTPS. Rollback keeps provider URLs immutab
 - The TypeScript client exists in source but is not yet published to a package registry; React Query hooks are pending.
 - Automated Ministry source monitoring is pending.
 - 2026 Eid-ul-Fitr, Shaqq Day, and Eid-ul-Adha remain deliberately undated until official confirmation.
+
+## UI and discoverability addendum
+
+Commit `6048e3c46b02a7df420afd199af30a7b72719ff4`, CI `33527989452`, and deployment `dpl_8Tn4JRk1FQtKBcfQhm5PHtzN5V83` replaced the native date picker with a bounded custom day stepper and aligned typography to Outfit, Geist Mono and Newsreader. Production interaction advanced 2026-12-25 to 2026-12-26. Browser inspection found no prohibited native control or overflow. The canonical page now exposes a product favicon, manifest, canonical/Open Graph/Twitter metadata, and a verified 1200x630 PNG.
