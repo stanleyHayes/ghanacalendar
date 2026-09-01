@@ -1,0 +1,1 @@
+import type { MetadataRoute } from "next";export default function sitemap():MetadataRoute.Sitemap{return[{url:"https://calendar.digitalghana.dev",lastModified:new Date("2026-09-01"),changeFrequency:"weekly",priority:1}]}

@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: ghanacalendar-api
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    plan: free
+    healthCheckPath: /health
+    autoDeployTrigger: commit
+    envVars:
+      - key: PORT
+        value: 8080

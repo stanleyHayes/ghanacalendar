@@ -1,0 +1,22 @@
+openapi: 3.1.0
+info: { title: GhanaCalendar API, version: 0.1.0 }
+servers: [{ url: "https://api-calendar.digitalghana.dev" }]
+paths:
+  /v1/holidays:
+    get:
+      parameters:
+        - { in: query, name: year, required: true, schema: { type: integer, minimum: 2024, maximum: 2026 } }
+      responses: { "200": { description: Versioned holiday occurrences } }
+  /v1/working-day:
+    get:
+      parameters:
+        - { in: query, name: date, required: true, schema: { type: string, format: date } }
+      responses: { "200": { description: Working-day decision } }
+  /v1/next-working-day:
+    get: { responses: { "200": { description: Next working date } } }
+  /v1/previous-working-day:
+    get: { responses: { "200": { description: Previous working date } } }
+  /v1/add-working-days:
+    get: { responses: { "200": { description: Shifted working date } } }
+  /v1/working-days-between:
+    get: { responses: { "200": { description: End-exclusive working-day count } } }
