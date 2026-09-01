@@ -1,0 +1,1 @@
+import type{MetadataRoute}from"next";export default function manifest():MetadataRoute.Manifest{return{name:"GhanaCalendar",short_name:"Calendar",description:"Ghana public holidays and working-day calculations",start_url:"/",display:"standalone",background_color:"#f4f0df",theme_color:"#146b48",icons:[{src:"/icon.svg",sizes:"any",type:"image/svg+xml"}]}}
