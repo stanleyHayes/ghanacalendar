@@ -1,7 +1,7 @@
 # GhanaCalendar execution ledger
 
 Last updated: 2026-09-01  
-Status: Beta implementation complete locally; production deployment in progress  
+Status: Public beta live; stable gates remain
 Canonical hosts: `calendar.digitalghana.dev`, `api-calendar.digitalghana.dev`
 
 ## Product boundary
@@ -48,9 +48,9 @@ GhanaCalendar provides evidence-backed Ghana holiday occurrences and determinist
 | CAL-2.2 | TypeScript SDK | Done locally | Codex | CAL-2.1 | `sdk/typescript/index.ts`; registry publication pending |
 | CAL-3.1 | Public website and sandbox | Done locally | Codex | CAL-1.2 | typecheck, dataset tests, production build pass |
 | CAL-3.2 | Admin review/publish workflow | Pending | Unassigned | CAL-0.1 | Required before stable; beta remains source-file reviewed |
-| CAL-4.1 | Web production release | In progress | Codex | CAL-3.1 | Vercel project/domain deployment next |
-| CAL-4.2 | API production release | In progress | Codex | CAL-2.1 | Render service/domain deployment next |
-| CAL-4.3 | Production smoke and rollback | Blocked | Codex | CAL-4.1, CAL-4.2 | Cannot run before both surfaces are attached |
+| CAL-4.1 | Web production release | Done | Codex | CAL-3.1 | Vercel `dpl_Ca1QeBj5KXhJBiqbchTKfx1L6hjB`; canonical host HTTP 200 and TLS verified |
+| CAL-4.2 | API production release | Done | Codex | CAL-2.1 | Render `srv-dabdeaf40ujc73aji6n0`, deploy `dep-dabdeb740ujc73aji93g`; custom domain verified |
+| CAL-4.3 | Production smoke and rollback | Done | Codex | CAL-4.1, CAL-4.2 | Health, REST, GraphQL, CSV, ICS, web, sitemap and robots passed; provider URLs retained for rollback |
 
 ## Release rule
 

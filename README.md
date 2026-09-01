@@ -1,14 +1,18 @@
 # GhanaCalendar
 
-`GhanaCalendar` is an independent Digital Ghana public-infrastructure product. Its canonical public home is `https://calendar.digitalghana.dev` after production evidence supports a lifecycle transition.
+`GhanaCalendar` is an independent Digital Ghana public-infrastructure product for evidence-backed public holidays and deterministic working-day calculations.
 
-## Before implementation
+- Web and sandbox: <https://calendar.digitalghana.dev>
+- REST, GraphQL and exports: <https://api-calendar.digitalghana.dev>
+- Timezone: `Africa/Accra`
+- Dataset: 2024–2026, version `2026.09.01`
 
-1. Record the problem, users, non-goals, source rights and acceptance evidence in `agent_plan.md`.
-2. Replace the placeholder source-register record only after authority and licence review.
-3. Add domain contracts before transport or UI code.
-4. Keep deployments fail-closed until required provider values exist.
+## Current beta
+
+The beta includes REST/GraphQL working-day operations, JSON/CSV/ICS holiday exports, a TypeScript client, a public register, and a browser calculator. Movable dates remain pending until the Ghana Ministry of the Interior publishes confirmation.
+
+Stable status remains blocked on the reviewed admin publication workflow, draft-only source watcher, package releases, and mature operational evidence. See `agent_plan.md` and `docs/runbooks/release-evidence.md`.
 
 ## Verification
 
-Run `ruby scripts/validate.rb`. Product-specific checks are added to the same quality workflow as implementation lands.
+Run `ruby scripts/validate.rb`, `go test ./...`, `go vet ./...`, `pnpm typecheck`, `pnpm test`, and `pnpm build`.
